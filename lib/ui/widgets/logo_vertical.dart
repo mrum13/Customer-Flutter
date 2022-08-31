@@ -1,0 +1,28 @@
+import 'package:ats_customer/shared/theme.dart';
+import 'package:flutter/material.dart';
+
+class LogoVertical extends StatelessWidget {
+  const LogoVertical({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          width: 42,
+          height: 28,
+          decoration: const BoxDecoration(
+              image:
+                  DecorationImage(image: AssetImage('assets/icon_logo.png'))),
+        ),
+        const SizedBox(
+          height: 6,
+        ),
+        Text(
+          'ASPHALT TRADE SYSTEM',
+          style: textLogoStyle,
+        ),
+      ],
+    );
+  }
+}
